@@ -440,7 +440,7 @@ do
     function library:Loader(info)
 		local info = info or {}
         local name = info.name or info.Name or info.title or info.Title or "UI Title"
-        local size = info.size or info.Size or Vector2.new(375, 420) -- width 375, height 420
+        local size = info.size or info.Size or Vector2.new(500, 350)
         local accent = info.accent or info.Accent or info.color or info.Color or theme.accent
         local callback = info.callback or info.Callback or info.callBack or info.CallBack or function() end
         local pageammount = info.pages or info.Pages or 1
@@ -903,7 +903,7 @@ do
     function library:New(info)
 		local info = info or {}
         local name = info.name or info.Name or info.title or info.Title or "UI Title"
-        local size = info.size or info.Size or Vector2.new(504, 680) -- width 504, height 680
+        local size = info.size or info.Size or Vector2.new(650, 500)
         local accent = info.accent or info.Accent or info.color or info.Color or theme.accent
         local callback = info.callback or info.Callback or info.callBack or info.CallBack or function() end
         local style = info.style or info.Style or 1
@@ -1341,7 +1341,7 @@ do
                 }, window.VisualPreview.Drawings)
                 --
                 local preview_tool = utility:Create("TextLabel", {Vector2.new(preview_box.Size.X / 2, preview_box.Size.Y + 20), preview_box}, {
-                    Text = "Weapon",
+                    Text = "Distance",
                     Size = theme.textsize,
                     Font = theme.font,
                     Color = theme.textcolor,
