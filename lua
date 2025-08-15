@@ -440,7 +440,7 @@ do
     function library:Loader(info)
 		local info = info or {}
         local name = info.name or info.Name or info.title or info.Title or "UI Title"
-        local size = info.size or info.Size or Vector2.new(375, 400)
+        local size = info.size or info.Size or Vector2.new(375, 420) -- width 375, height 420
         local accent = info.accent or info.Accent or info.color or info.Color or theme.accent
         local callback = info.callback or info.Callback or info.callBack or info.CallBack or function() end
         local pageammount = info.pages or info.Pages or 1
@@ -903,7 +903,7 @@ do
     function library:New(info)
 		local info = info or {}
         local name = info.name or info.Name or info.title or info.Title or "UI Title"
-        local size = info.size or info.Size or Vector2.new(504, 650)
+        local size = info.size or info.Size or Vector2.new(504, 680) -- width 504, height 680
         local accent = info.accent or info.Accent or info.color or info.Color or theme.accent
         local callback = info.callback or info.Callback or info.callBack or info.CallBack or function() end
         local style = info.style or info.Style or 1
