@@ -440,7 +440,7 @@ do
     function library:Loader(info)
 		local info = info or {}
         local name = info.name or info.Name or info.title or info.Title or "UI Title"
-        local size = info.size or info.Size or Vector2.new(500, 300)
+        local size = info.size or info.Size or Vector2.new(500, 350)
         local accent = info.accent or info.Accent or info.color or info.Color or theme.accent
         local callback = info.callback or info.Callback or info.callBack or info.CallBack or function() end
         local pageammount = info.pages or info.Pages or 1
@@ -903,7 +903,7 @@ do
     function library:New(info)
 		local info = info or {}
         local name = info.name or info.Name or info.title or info.Title or "UI Title"
-        local size = info.size or info.Size or Vector2.new(504, 600)
+        local size = info.size or info.Size or Vector2.new(650, 500)
         local accent = info.accent or info.Accent or info.color or info.Color or theme.accent
         local callback = info.callback or info.Callback or info.callBack or info.CallBack or function() end
         local style = info.style or info.Style or 1
@@ -1499,7 +1499,7 @@ do
                 }, window.VisualPreview.Drawings)
                 --
                 local preview_flags = utility:Create("TextLabel", {Vector2.new(preview_box.Size.X -56, 5), preview_box}, {
-                    Text = "<- box retard", --Display\nMoving\nJumping\nDesynced"
+                    Text = "", --Display\nMoving\nJumping\nDesynced"
                     Size = theme.textsize,
                     Font = theme.font,
                     Color = Color3.fromRGB(255, 255, 255),
@@ -1509,7 +1509,7 @@ do
                 }, window.VisualPreview.Drawings)
                 --
                 local preview_healthbarvalue = utility:Create("TextLabel", {Vector2.new(0, 5), preview_heatlhbar}, {
-                    Text = "<- health retard", --Display\nMoving\nJumping\nDesynced"
+                    Text = "", --Display\nMoving\nJumping\nDesynced"
                     Size = theme.textsize,
                     Font = theme.font,
                     Color = Color3.fromRGB(0, 255, 0),
