@@ -1499,7 +1499,7 @@ do
                 }, window.VisualPreview.Drawings)
                 --
                 local preview_flags = utility:Create("TextLabel", {Vector2.new(preview_box.Size.X -56, 5), preview_box}, {
-                    Text = "Flags ->", --Display\nMoving\nJumping\nDesynced"
+                    Text = "box retard", --Display\nMoving\nJumping\nDesynced"
                     Size = theme.textsize,
                     Font = theme.font,
                     Color = Color3.fromRGB(255, 255, 255),
@@ -1509,7 +1509,7 @@ do
                 }, window.VisualPreview.Drawings)
                 --
                 local preview_healthbarvalue = utility:Create("TextLabel", {Vector2.new(0, 5), preview_heatlhbar}, {
-                    Text = "<- Number", --Display\nMoving\nJumping\nDesynced"
+                    Text = "<- health retard", --Display\nMoving\nJumping\nDesynced"
                     Size = theme.textsize,
                     Font = theme.font,
                     Color = Color3.fromRGB(0, 255, 0),
